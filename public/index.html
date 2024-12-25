@@ -22,13 +22,26 @@
         <p id="nameResponse"></p>
     </section>
 
-    <!-- Form Tính BMI -->
-    <!-- TODO: Tạo một section mới với tiêu đề "Tính chỉ số BMI" -->
-    <!-- TODO: Tạo form với id là "bmiForm" -->
-    <!-- TODO: Thêm input cho chiều cao -->
-    <!-- TODO: Thêm input cho cân nặng -->
-    <!-- TODO: Thêm nút submit để tính BMI -->
-    <!-- TODO: Thêm một phần tử <p> với id là "bmiResult" để hiển thị kết quả -->
+<!-- Section Tính Chỉ Số BMI -->
+<section>
+    <h2>Tính chỉ số BMI</h2>
+    <form id="bmiForm">
+        <!-- Input Chiều Cao -->
+        <label for="height">Chiều cao (cm):</label>
+        <input type="number" id="height" placeholder="Nhập chiều cao (cm)" required />
+
+        <!-- Input Cân Nặng -->
+        <label for="weight">Cân nặng (kg):</label>
+        <input type="number" id="weight" placeholder="Nhập cân nặng (kg)" required />
+
+        <!-- Nút Submit -->
+        <button type="submit">Tính BMI</button>
+    </form>
+
+    <!-- Kết Quả BMI -->
+    <p id="bmiResult"></p>
+</section>
+
     </section>
     <script src="js/script.js"></script>
 </body>
